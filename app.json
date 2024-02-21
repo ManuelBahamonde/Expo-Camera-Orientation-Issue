@@ -3,7 +3,7 @@
     "name": "camera-orientation-issue",
     "slug": "camera-orientation-issue",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -25,6 +25,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "expo": {
+      "plugins": [
+        [
+          "expo-camera",
+          {
+            "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+          }
+        ]
+      ]
     }
   }
 }
